@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="管理摄像头" />
+
+        <Button
+            android:id="@+id/liveVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/playback"
+            android:text="直播" />
+
+        <Button
+            android:id="@+id/playback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="回放" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:layout_below="@+id/divider3">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/divider1"
+            android:layout_toStartOf="@id/divider2">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/main_add" />
+            <ImageView
+                android:id="@+id/iv_delete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-15dp"
+                android:visibility="gone"
+                android:src="@mipmap/u23" />
+
+            <ImageView
+                android:id="@+id/icLine_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:src="@mipmap/u21" />
+
+            <TextView
+                android:id="@+id/tv_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/icLine_one"
+                android:text="离线"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/divider1"
+            android:layout_toEndOf="@id/divider2">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:background="@mipmap/main_add" />
+
+            <ImageView
+                android:id="@+id/iv_delete2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-15dp"
+                android:visibility="gone"
+                android:src="@mipmap/u23" />
+
+            <ImageView
+                android:id="@+id/icLine_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:src="@mipmap/u21" />
+
+            <TextView
+                android:id="@+id/tv_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/icLine_two"
+                android:text="离线"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider1"
+            android:layout_toStartOf="@id/divider2" >
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:scaleType="fitXY"
+                android:background="@mipmap/main_add" />
+
+            <ImageView
+                android:id="@+id/iv_delete3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="15dp"
+                android:translationY="-15dp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/u23" />
+
+            <ImageView
+                android:id="@+id/icLine_three"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/u21" />
+
+            <TextView
+                android:id="@+id/tv_text3"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/icLine_three"
+                android:text="离线"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider1"
+            android:layout_toEndOf="@id/divider2" >
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:background="@mipmap/main_add" />
+
+            <ImageView
+                android:id="@+id/iv_delete4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="15dp"
+                android:translationY="-15dp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/u23" />
+
+            <ImageView
+                android:id="@+id/icLine_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/u21" />
+
+            <TextView
+                android:id="@+id/tv_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/icLine_four"
+                android:text="离线"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
